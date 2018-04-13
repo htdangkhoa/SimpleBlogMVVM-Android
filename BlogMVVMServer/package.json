@@ -1,0 +1,26 @@
+{
+  "name": "blog_mvvm_server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "npm run watch && nodemon build/bundle.js"
+  },
+  "dependencies": {
+    "aes256": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "nodemon-webpack-plugin": "^0.1.6",
+    "source-map-support": "^0.5.4",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
